@@ -1,94 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Home</title>
-        <link rel="favicon" href=".img" />
-        <link rel="stylesheet" href="css/style-hf.css" />
-        <link rel="stylesheet" href="css/style-main.css" />
-    </head>
-    <body>
-        <header class="header">
-            <div class="logo">
-                <h1>Portfolio</h1>
-            </div>
-            <nav class="nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#projects">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
 
-        <main>
-            <section class="contact">
-                <h2>Contact Me</h2>
-                <form id="contactForm">
-                    <input
-                        type="text"
-                        id="name"
-                        placeholder="Your Name"
-                        required
-                    />
-                    <input
-                        type="email"
-                        id="email"
-                        placeholder="Your Email"
-                        required
-                    />
-                    <textarea
-                        id="message"
-                        placeholder="Your Message"
-                        required
-                    ></textarea>
-                    <button type="submit">Send Message</button>
-                </form>
-                <p id="responseMessage"></p>
-            </section>
-        </main>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="favicon" href=".img" />
+    <link rel="stylesheet" href="css/style-hf.css" />
+    <link rel="stylesheet" href="css/style-main.css" />
+</head>
 
-        <footer class="footer">
-            <p>&copy; 2025 My Portfolio. All rights reserved.</p>
-            <div class="social-links">
-                <a href="https://github.com/f-4se/" target="_blank">GitHub</a>
-                <a href="mailto:utsavbhandari77@gmail.com">Email</a>
-            </div>
-        </footer>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>Portfolio</h1>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                document
-                    .getElementById("contactForm")
-                    .addEventListener("submit", function (event) {
-                        event.preventDefault();
+    <main>
+        <section class="contact">
+            <h2>Contact Me</h2>
+            <form id="contactForm" action="https://formspree.io/f/xqapklzd" method="POST">
+                <input type="text" id="name" name="name" placeholder="Your Name" required />
+                <input type="email" id="email" name="email" placeholder="Your Email" required />
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" name="submit">Send Message</button>
+            </form>
+            <p id="responseMessage"></p>
+        </section>
+    </main>
 
-                        let name = document.getElementById("name").value.trim();
-                        let email = document
-                            .getElementById("email")
-                            .value.trim();
-                        let message = document
-                            .getElementById("message")
-                            .value.trim();
-                        let responseMessage =
-                            document.getElementById("responseMessage");
+    <footer class="footer">
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://github.com/f-4se/" target="_blank">GitHub</a>
+            <a href="mailto:utsavbhandari77@gmail.com">Email</a>
+        </div>
+    </footer>
 
-                        if (name !== "" && email !== "" && message !== "") {
-                            responseMessage.textContent =
-                                "Thank you, " +
-                                name +
-                                "! Your message has been sent.";
-                            responseMessage.style.color = "green";
-                            this.reset();
-                        } else {
-                            responseMessage.textContent =
-                                "Please fill in all fields.";
-                            responseMessage.style.color = "red";
-                        }
-                    });
-            });
-        </script>
-    </body>
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document
+                .getElementById("contactForm")
+                .addEventListener("submit", function (event) {
+                    // event.preventDefault();
+
+                    let name = document.getElementById("name").value.trim();
+                    let email = document
+                        .getElementById("email")
+                        .value.trim();
+                    let message = document
+                        .getElementById("message")
+                        .value.trim();
+                    let responseMessage =
+                        document.getElementById("responseMessage");
+
+                    if (name !== "" && email !== "" && message !== "") {
+                        responseMessage.textContent =
+                            "Thank you, " +
+                            name +
+                            "! Your message has been sent.";
+                        responseMessage.style.color = "green";
+                        this.reset();
+                    } else {
+                        responseMessage.textContent =
+                            "Please fill in all fields.";
+                        responseMessage.style.color = "red";
+                    }
+                });
+        });
+    </script> -->
+</body>
+
 </html>
