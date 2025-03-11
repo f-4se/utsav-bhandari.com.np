@@ -1,42 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <link rel="favicon" href=".img" />
-    <link rel="stylesheet" href="css/style-hf.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="logo">
-        <h1>Portfolio</h1>
-      </div>
-      <nav class="nav">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home</title>
+        <link rel="favicon" href=".img" />
+        <link rel="stylesheet" href="css/style-hf.css" />
+        <link rel="stylesheet" href="css/style-main.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo">
+                <h1>Portfolio</h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <main>
-      <h1>Welcome to My Portfolio</h1>
-    </main>
+        <main>
+            <section id="about">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <img src="images/king-cat.jpg" alt="Your Name" />
+                    <div class="about-text">
+                        <p>
+                            Hi, I'm <strong>Utsav Bhandari</strong>, a
+                            passionate web developer with experience in HTML,
+                            CSS, JavaScript, Wordpress and, C/C++. I love
+                            building fun websites that provide great user
+                            experiences.
+                        </p>
+                        <p>
+                            I specialize in front-end development, but I also
+                            enjoy learning new technologies to expand my skill
+                            set. My goal is to create functional and visually
+                            appealing applications.
+                        </p>
+                        <button id="moreBtn">🔽</button>
+                        <p id="extraText" class="hidden">
+                            In my free time, I enjoy coding challenges, learning
+                            new frameworks, and working on personal projects. I
+                            believe in continuous learning and staying
+                            up-to-date with the latest web trends.
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-    <footer class="footer">
-        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
-        <div class="social-links">
-          <a href="https://github.com" target="_blank">GitHub</a>
-          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-          <a href="mailto:utsavbhandari77@gmail.com">Email</a>
-      </div>
-    </footer>
+            <section id="skills">
+                <h2>My Skills</h2>
+                <div class="skill">
+                    <span>HTML</span>
+                </div>
+                <div class="skill">
+                    <span>CSS</span>
+                </div>
+                <div class="skill">
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill">
+                    <span>C/C++</span>
+                </div>
+                <div class="skill">
+                    <span>Wordpress</span>
+                </div>
+            </section>
 
-    <script>
-      
-    </script>
-  </body>
+            <section id="projects">
+                <h2>My Projects</h2>
+                <div class="project-card">
+                    <h3>Book Inventory and Customer Reservation System</h3>
+                    <p>
+                        The project demonstrated efficient book inventory
+                        management and reservation handling using sorted stacks
+                        and queues. By maintaining the stack order during
+                        insertions, the project optimized data handling and
+                        retrieval processes.
+                    </p>
+                    <a href="https://github.com/f-4se/dsa">Link</a>
+                </div>
+                <div class="project-card">
+                    <h3>Prisioner Management System</h3>
+                    <p>
+                        The project aims to develop a terminal based Prisoner
+                        Management System designed to efficiently manage inmate
+                        records and related administrative tasks within a
+                        correctional facility.
+                    </p>
+                    <a
+                        href="https://github.com/f-4se/Java-Terminal-Based-Prisoner-Management"
+                        >Link</a
+                    >
+                </div>
+            </section>
+
+            <script src="js/script.js"></script>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/f-4se/" target="_blank">GitHub</a>
+                <a href="mailto:utsavbhandari77@gmail.com">Email</a>
+            </div>
+        </footer>
+
+        <script></script>
+    </body>
 </html>

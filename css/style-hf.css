@@ -13,11 +13,13 @@ body {
 /* Nav */
 
 header {
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
     background-color: #423f54;
+    position: sticky;
 }
 
 .logo h1 {
@@ -44,10 +46,33 @@ header {
     color: #b9b8b8;
   }
 
+
+  @media (max-width: 600px){
+    header{
+        flex-direction: column;
+    }
+    .nav{
+    border-top: 1px solid #000000;
+
+    }
+    .nav ul{
+        flex-direction: column;
+        text-align: center;
+    }
+  }
 /* Footer  */
 .footer {
   padding: 15px 20px;
   color: #a5a5a5;
   background-color: #423f54;
   font-weight: bold;
+  text-align: center;
+}
+
+.social-links{
+    padding-top: 10px;
+}
+
+.social-links a{
+    color: black;
 }

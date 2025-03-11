@@ -1,0 +1,120 @@
+#skills,
+#projects {
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.skill {
+    margin: 10px 0;
+}
+
+#skills h2,
+#projects h2 {
+    text-align: center;
+}
+
+.project-card {
+    padding: 15px;
+    margin: 10px auto;
+    width: 90%;
+    background: hsl(0, 0%, 93%);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.project-card a {
+    padding: 15px 0;
+    margin: 10px auto;
+    color: #424242;
+}
+
+#about {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.about-content {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+#about img {
+    width: 150px;
+    margin-right: 20px;
+}
+
+@media (max-width: 600px) {
+    #about img {
+        margin-bottom: 20px;
+    }
+}
+
+.about-text {
+    max-width: 500px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+button {
+    background: white;
+    border: none;
+    padding: 8px 12px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+.contact {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button:hover {
+    background: green;
+}
+
+#responseMessage {
+    margin-top: 10px;
+    font-weight: bold;
+}
